@@ -1,0 +1,222 @@
+/* header css */
+/* font ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    max-width:1270px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+} 
+a{
+    text-decoration: none;
+}
+.header{
+    padding:0 70px;
+    padding-top:20px;
+    background: #161616;
+    border-radius:5px;
+    color: #fff;
+}
+
+.banner{
+    display: flex;
+    justify-content:space-around;
+} 
+.banner-info{
+   width:30%
+}
+.banner-info h1{
+    font-size: 2.5em;
+}
+.banner-info p{
+    font-size: 16px;
+}
+
+
+.banner-button a{
+    color: #fff;
+    text-decoration: none;
+    background: #dd0000;
+    display: inline-block;
+    height: 40px;
+    width:120px;
+    border-radius:5px;
+    text-align: center;
+    line-height:40px;
+
+}
+     /*-------------- main tag css ---------------- */
+     .left-content{
+        background: #000;
+     }
+     
+     .transfer{
+        display: block;
+     }
+     .comment-img{
+        height: 16px;
+        width: 16px;
+     }
+      
+     main{
+         margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+     }
+     
+      .left-content{
+        width: 20%;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       column-gap: 30p;
+        height: 200px;
+        border-radius: 5px;
+      }
+      .content1{
+        background: #fff;
+        height: 30%;
+        border-radius: 5px;
+        text-align: center;
+     }
+     .content2{
+        width: 70%;
+        background: #fff;
+        height: 30%;
+        border-radius: 5px;
+        text-align: center;
+     }
+     .content3{
+        background: red;
+        height: 30%;
+        border-radius: 5px;
+        text-align: center;
+     }
+      .content1, .content2, .content3{
+        width:70%;
+      }
+      .ami a{
+         color: black;
+      }
+      .content3 a{
+         color: #fff;
+      }
+     .right-content{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        width:78%;
+     }
+    .font{
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+    }
+/* ------------------footer css--------------- */
+footer{
+   background: #000;
+   color: #fff;
+   width: 80%;
+   margin: auto;
+   padding: 80px 140px;
+   margin-top: 100px;
+  
+}
+
+footer h1{
+   text-align: center;
+}
+hr{
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social-icon {
+   display: flex;
+  
+   justify-content: space-evenly;
+}
+
+.social-icon ul{
+   list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.social-icon ul li{
+   margin-left: 45px;
+}
+.social-icon a {
+   color: #fff;
+}
+.right-social{
+   text-align: center;
+   margin-top: 20px;
+}
+.right-social span{
+
+   background: rgba(128, 0, 128, 0.664);
+   border-radius:50%;
+   padding:10px;
+   margin-left: 19px;
+   color: #fff;
+}
+.right-social a{
+   color:#fff
+}
+
+/* hover effect */
+.right-social span:hover{
+   background:purple;
+   border: 1px solid #fff;
+   transition: .5s;
+}
+.banner-button:hover .button-a{
+   background: rgba(255, 0, 0, 0.568);
+   border: 1px solid rebeccapurple;
+}
+.ami:hover {
+   background: rgba(255, 255, 255, 0.74);
+   border: 1px solid yellowgreen;
+   transition: .5s;
+}
+.content3:hover {
+   background: rgba(255, 0, 0, 0.685);
+}
+  /*----------------------- media query ------------------------- */
+  /*------------------ Mobile Device ------------ */
+  @media screen and (max-width:688px) {
+   .banner{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      flex-direction: column;
+      background: yello;
+   }
+   .banner-info{
+      width: 90%;
+   }
+   main{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+     
+   }
+   .right-content{
+      display: grid;
+      grid-template-columns: 1fr ;
+      
+   }
+  footer ul{
+   display: flex;
+   flex-direction: column;
+   
+  }
+  }
+ /* -------------------------tablet Device ---------------------- */
+ @media only screen and (min-width:689px) and (max-width:992px){
+   main{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+     
+   }
+   .right-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      
+   }
+ }
